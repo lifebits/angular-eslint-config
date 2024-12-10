@@ -1,4 +1,7 @@
-import {Injectable, OnInit} from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
+import { Users, AdminUser } from './users.consts';
+
+const asd = AdminUser['foo_bar'];
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +9,7 @@ import {Injectable, OnInit} from '@angular/core';
 export class UserService implements OnInit {
 
   public publicSimpleVar = 'PublicVar';
-  private privateSimpleVar = 'PrivateVar'
+  private privateSimpleVar = 'PrivateVar';
 
   static staticMethod(a: number, b: number) {
     return a + b;
@@ -15,6 +18,7 @@ export class UserService implements OnInit {
   constructor() { }
 
   private initialize(): void {
+    const asdVar = 'ASD';
     console.log('Initialize');
   }
 
